@@ -9,19 +9,19 @@ number:
 date:
 consensus: true
 v: 3
-area: AREA
-workgroup: WG Working Group
+area: "Operations and Management"
+workgroup: "Operations and Management Area Working Group"
 keyword:
  - intent
  - webassembly
  - edge
 venue:
-  group: OPSAWG
-  type: Working Group
-  mail: opsawg@ietf.org
-  arch: https://example.com/WG
-  github: USER/REPO
-  latest: https://example.com/LATEST
+  group: "Operations and Management Area Working Group"
+  type: "Working Group"
+  mail: "opsawg@ietf.org"
+  arch: "https://mailarchive.ietf.org/arch/browse/opsawg/"
+  github: "billwuqin/webassembly-for-the-edge"
+  latest: "https://billwuqin.github.io/webassembly-for-the-edge/draft-chen-opsawg-intent-webassembly-framework.html"
 
 author:
  -
