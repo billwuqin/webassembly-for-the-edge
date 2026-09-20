@@ -3,7 +3,7 @@ title: "Intent-Driven WebAssembly Framework for Secure Management in Heterogeneo
 abbrev: "Intent-Driven WebAssembly Framework"
 category: info
 
-docname: draft-chen-opsawg-intent-webassembly-framework
+docname: draft-chen-opsawg-intent-webassembly-framework-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -27,11 +27,11 @@ author:
  -
     fullname: Zonghua Cheng
     organization: China Telecom
-    email: your.email@example.com
+    email: "bill.wu@huawei.com"
  -
     fullname: Jianping Sun
     organization: China Telecom
-    email: your.email@example.com
+    email: "bill.wu@huawei.com"
 
 normative:
 
