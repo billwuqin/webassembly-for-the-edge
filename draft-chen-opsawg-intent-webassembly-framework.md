@@ -237,6 +237,7 @@ informative:
 
 ## Telemetry and Sensing Domain
 
+~~~~
    interface telemetry {
        record metric-data {
            metric-name: string,
@@ -245,9 +246,11 @@ informative:
        }
        read-metric: func(name: string) -> result<metric-data, string>
    }
+~~~~
 
 ## Actuation and Control Domain
 
+~~~~
    interface actuation {
        enum pin-value { low, high }
        gpio-write: func(pin: u32, value: pin-value) -> result<_, string>
@@ -258,9 +261,11 @@ informative:
            rx-len: u32
        ) -> result<list<u8>, string>
    }
+~~~~
 
 ## Media Processing Domain
 
+~~~~
    interface media {
        enum resolution-mode {
            res-640x480,
@@ -270,13 +275,14 @@ informative:
        audio-start: func(mode: u32, sample-rate: u32) -> result<_, string>
        camera-capture: func(res: resolution-mode) -> result<list<u8>, string>
    }
+~~~~
 
 # Metadata Definitions and Schemas
 
 ## Capability Profiling Schema (Node Profile)
 
-   [JSON Schema and payload definitions preserved to define standard data
-   models for node inventory management]
+JSON Schema and payload definitions preserved to define standard data
+models for node inventory management
 
 ## SUIT Manifest and Bytecode Distribution Envelope
 
