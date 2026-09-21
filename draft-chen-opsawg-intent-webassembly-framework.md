@@ -162,7 +162,7 @@ informative:
    | [Static Audit Matrix] -> [CaaS Pool] -> [SHA256 Sign]  |
    +--------------------------------------------------------+
                                 |
-                                v 
+                                v
    +--------------------------------------------------------+
    |        Embodied Execution Plane (Device Layer)         |
    | [Warm Process Pool] -> [WASM Sandbox] -> [UBI Drivers] |
@@ -289,7 +289,7 @@ informative:
 
    The SUIT manifest enforces the strict sequential workflow required
    for trusted edge execution:
-   
+
    1. Manifest Authentication: The recipient edge node validates the
       COSE signature of the SUIT manifest using pre-configured trust
       anchors.
@@ -325,7 +325,7 @@ informative:
            "uri": "coap://management-server.local/wasm/module.wasm",
            "digest": {
              "algorithm": "SHA-256",
-             "value": 
+             "value":
              "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
            }
          }
@@ -361,7 +361,7 @@ informative:
 
    The audit pipeline enforces the following validation steps for
    self-contained core modules:
-   
+
    1. Import Table Extraction: The audit engine parses the WASM binary
       structure, filtering all tokens located within the "Import Section".
       This maps every external host function identifier requested by the
@@ -386,7 +386,7 @@ informative:
       overflows inside the sandboxed application cannot compromise
       host address spaces.
    2. File System Namespacing: Runtimes MUST map the sandbox internal
-      root '/' directory to an ephemeral host path using chroot 
+      root '/' directory to an ephemeral host path using chroot
       primitives to avoid directory traversal vectors.
 
 # Operational Considerations
